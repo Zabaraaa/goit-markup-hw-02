@@ -1,14 +1,17 @@
 :root {
     --top-color: #000000;
     --common-color: #ffffff;
-
+    --title-common-color: #212121;
+    --contact-color: #757575;
+    --active-link-color: #2196F3;
+    --background-common-color: #2F303A;
 }
 
 
 /* --------------------body-------------------- */
 body {
     background-color: var(--common-color);
-    font-family: "roboto", sans;
+    font-family: "Roboto", sans-serif;
     color: var(--top-color); 
 }
 
@@ -16,7 +19,7 @@ body {
 /*------------------- Header -------------------*/
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
@@ -26,7 +29,7 @@ body {
         text-decoration: none;
 }
 .logo-part-one {
-    color: #2196F3;
+    color: var(--active-link-color);
 }
 
 .list {
@@ -42,20 +45,20 @@ body {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #212121;
+        color:var(--title-common-color);
 }
 .header-link:hover,
 .header-link:focus {
-color: #2196F3;
+color: var(--active-link-color);
 }
 
 .header-list-contacts a {
-    color: #757575;
+    color: var(--contact-color);
 }
 
 /* ----------------------HERO------------------------*/
 .hero {
-background-color: #2F303A;;
+background-color: var(--background-common-color);
 }
 .hero-title {
         font-weight: 900;
@@ -67,17 +70,14 @@ background-color: #2F303A;;
         color: var(--common-color);
 }
 .hero-btn {
-font-family: 'Roboto';
+font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--common-color);
-    background-color: #2196F3;
+    background-color: var(--active-link-color);
 }
 
 /* --------------About---------------- */
@@ -94,7 +94,7 @@ font-family: 'Roboto';
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: #757575;
+        color:var(--contact-color);
 }
 .title {
     font-weight: 700;
@@ -102,7 +102,7 @@ font-family: 'Roboto';
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color:var(--title-common-color);
 }
 
 .team {
@@ -114,7 +114,7 @@ font-family: 'Roboto';
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color:var(--title-common-color);
 }
 .team-text {
     font-weight: 400;
@@ -122,12 +122,11 @@ font-family: 'Roboto';
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #757575;
-}
+        color:var(--contact-color);
 
 /* -------------Footer-------------- */
 .footer {
-    background: #2F303A;
+    background: var(--background-common-color);
 }
 .footer-list {
     color: inherit;
@@ -147,6 +146,19 @@ font-family: 'Roboto';
 }
 
 /* -------------Portfolio------------- */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .portfolio-item {
     font-weight: 500;
         font-size: 16px;
@@ -155,17 +167,28 @@ font-family: 'Roboto';
         letter-spacing: 0.03em;
         color: var(--common-color);
 }
+.portfolio-btn { 
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-common-color);
+    cursor: pointer;
+}
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background-color: #2196F3;
+    background-color: var(--active-link-color);
     color: var(--common-color); 
 }
+
 .portfolio-information-title{
     font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: #212121;
+        color:var(--title-common-color);
 }
 
 .portfolio-information-text {
@@ -173,7 +196,7 @@ font-family: 'Roboto';
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
-        color: #757575;
+        color:var(--contact-color);
 }
 
 
