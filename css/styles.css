@@ -79,6 +79,10 @@ font-family: inherit;
     color: var(--common-color);
     background-color: var(--active-link-color);
 }
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8; 
+}
 
 /* --------------About---------------- */
 .about-title {
@@ -122,7 +126,7 @@ font-family: inherit;
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color:var(--contact-color);
+        color:var(--contact-color);}
 
 /* -------------Footer-------------- */
 .footer {
@@ -134,18 +138,29 @@ font-family: inherit;
 .footer-logo {
     color:var(--common-color);
 }
-.footer-item {
+.footer-item-mail,
+.footer-item-tel {
     font-weight: 400;
         font-size: 14px;
         line-height: 1.72;
         letter-spacing: 0.03em;
-        color:var(--common-color);
+        color:rgba(255, 255, 255, 0.6);
+}
+.footer-item {
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: var(--common-color)
 }
 .contacts-address {
     font-style: normal;
 }
 
 /* -------------Portfolio------------- */
+.current {
+    color: var(--active-link-color);
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -180,7 +195,7 @@ font-family: inherit;
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     background-color: var(--active-link-color);
-    color: var(--common-color); 
+    color: var(--common-color);  
 }
 
 .portfolio-information-title{
